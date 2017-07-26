@@ -4,6 +4,8 @@ package com.maxcheung.functionalinterface;
 import java.util.Date;
 import java.util.function.Supplier;
 
+import com.maxcheung.model.User;
+
 public class SupplierFunctionExample {
 	public static void main(String args[]) {
 		// Supplier instance with lambda expression
@@ -20,9 +22,30 @@ public class SupplierFunctionExample {
 		Supplier<Date> dateSupplier = SupplierFunctionExample::getSystemDate;
 		Date systemDate = dateSupplier.get();
 		System.out.println("systemDate->" + systemDate);
+
+		Supplier<String> name1 = new Supplier<String>() {
+			@Override
+			public String get() {
+				return "Hello";
+			}
+		};
+		System.out.println(name1.get());
+
+		Supplier<String> name2 = () -> new String("John");
+		System.out.println(name2.get());
+
+		Supplier<String> name3 = () -> "Jim";
+		System.out.println(name3.get());
+
 	}
 
 	public static Date getSystemDate() {
 		return new Date();
 	}
+
+
+	public static User createUser() {
+		return new User(1, "Jenny");
+	}
+
 }
