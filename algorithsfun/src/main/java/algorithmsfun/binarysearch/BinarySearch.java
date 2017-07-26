@@ -1,4 +1,4 @@
-package algorithmsfun;
+package algorithmsfun.binarysearch;
 
 public class BinarySearch 
 {

@@ -1,4 +1,4 @@
-package algorithmsfun;
+package algorithmsfun.binarysearch;
 
 import static org.junit.Assert.assertEquals;
 
