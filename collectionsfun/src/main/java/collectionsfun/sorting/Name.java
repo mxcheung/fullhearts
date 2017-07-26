@@ -1,4 +1,4 @@
-package collectionsfun;
+package collectionsfun.sorting;
 
 public class Name implements Comparable<Name> {
     private final String firstName, lastName;
@@ -29,7 +29,7 @@ public class Name implements Comparable<Name> {
     }
 
     public int compareTo(Name n) {
-        int lastCmp = lastName.compareTo(n.lastName);
-        return (lastCmp != 0 ? lastCmp : firstName.compareTo(n.firstName));
+    	 int lastCmp = lastName.compareTo(n.lastName);
+         return (lastCmp != 0 ? lastCmp : firstName.compareTo(n.firstName));
     }
 }
