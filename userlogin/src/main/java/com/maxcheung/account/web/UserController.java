@@ -5,12 +5,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.maxcheung.account.model.User;
 import com.maxcheung.account.service.SecurityService;
 import com.maxcheung.account.service.UserService;
+import com.maxcheung.account.validator.UserPasswordValidator;
 import com.maxcheung.account.validator.UserValidator;
 
 @Controller
@@ -23,6 +25,7 @@ public class UserController {
 
     @Autowired
     private UserValidator userValidator;
+
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registration(Model model) {
@@ -61,4 +64,5 @@ public class UserController {
     public String welcome(Model model) {
         return "welcome";
     }
+    
 }
