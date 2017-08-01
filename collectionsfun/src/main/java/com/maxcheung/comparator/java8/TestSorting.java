@@ -1,4 +1,4 @@
-package com.maxcheung.java8;
+package com.maxcheung.comparator.java8;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
