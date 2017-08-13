@@ -1,5 +1,7 @@
-package com.maxcheung.comms.email;
+package com.maxcheung.comms.service;
  
+import javax.mail.internet.MimeMessage;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +9,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
- 
-import javax.mail.internet.MimeMessage;
+
+import au.com.maxcheung.emailservice.model.EmailStatus;
  
 @Component
 public class EmailSender {

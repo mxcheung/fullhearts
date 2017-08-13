@@ -20,7 +20,7 @@ public class SwaggerConfig {
     @Bean
     public Docket api() { 
         return new Docket(DocumentationType.SWAGGER_2)
-          .groupName("FundDataTableService")
+          .groupName("EmailService")
           .forCodeGeneration(true)
           .select()                                  
           .apis(RequestHandlerSelectors.any())              
@@ -33,6 +33,6 @@ public class SwaggerConfig {
     @SuppressWarnings("unchecked")
     private Predicate<String> getPaths() {
         return or(
-                regex("/v6/funddata/.*"));
+                regex("/v6/email/.*"));
     }
 }

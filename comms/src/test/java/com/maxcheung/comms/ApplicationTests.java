@@ -8,9 +8,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.thymeleaf.context.Context;
 
-import com.maxcheung.comms.email.EmailHtmlSender;
-import com.maxcheung.comms.email.EmailSender;
-import com.maxcheung.comms.email.EmailStatus;
+import com.maxcheung.comms.service.EmailHtmlSender;
+import com.maxcheung.comms.service.EmailSender;
+
+import au.com.maxcheung.emailservice.model.EmailStatus;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

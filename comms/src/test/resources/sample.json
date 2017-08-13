@@ -1,0 +1,14 @@
+{
+	"emailParams": [
+		{
+			"key": "title",
+			"value": "Lorem Ipsum 2"
+		},
+		{
+			"key": "description",
+			"value": "Lorem Lorem Lorem blah 1"
+		}
+	],
+	"subject": "Spring boot test email",
+	"to": "abc@gmail.com"
+}

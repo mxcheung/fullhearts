@@ -1,4 +1,4 @@
-package com.maxcheung.comms.email;
+package au.com.maxcheung.emailservice.model;
  
 public class EmailStatus {
  
