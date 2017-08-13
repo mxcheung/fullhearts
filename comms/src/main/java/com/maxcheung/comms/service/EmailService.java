@@ -35,8 +35,8 @@ public class EmailService {
 		for (Map.Entry<String, String> entry : datamap.entrySet()) {
 			context.setVariable(entry.getKey(), entry.getValue());
 		}
-		EmailStatus emailStatus = emailHtmlSender.send(mailTo, subject, "email/template-1", context);
-		emailSender.sendPlainText(mailTo, "Spring boot app", "this is not samp");
+		EmailStatus emailStatus = emailHtmlSender.send(mailTo, subject, "email/reset-password", context);
+	//	emailSender.sendPlainText(mailTo, "Spring boot app", "this is not samp");
 	}
     
     

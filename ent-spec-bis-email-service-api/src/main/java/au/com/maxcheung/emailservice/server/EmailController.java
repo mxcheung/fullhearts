@@ -20,7 +20,7 @@ public interface EmailController {
     String EMAIL_BASE_CONTEXT = "/v6/email";
 
     String TEST_MAPPING = "/test";
-	String SENDMAIL_MAPPING = "/sendmail";
+	String RESET_PASSWORD_MAPPING = "/resetPwd";
 
 
 	@RequestMapping(value = TEST_MAPPING, method = GET)
@@ -28,9 +28,9 @@ public interface EmailController {
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name);
 
     
-    @RequestMapping(value = SENDMAIL_MAPPING, method = POST, consumes = APPLICATION_JSON_VALUE)
+    @RequestMapping(value = RESET_PASSWORD_MAPPING, method = POST, consumes = APPLICATION_JSON_VALUE)
     @ResponseStatus(OK)
-    public void sendEmail(@RequestBody EmailDTO emailDTO);
+    public void resetPassword(@RequestBody EmailDTO emailDTO);
 
 
 }

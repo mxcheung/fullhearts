@@ -1,12 +1,20 @@
 {
 	"emailParams": [
 		{
-			"key": "title",
-			"value": "Lorem Ipsum 2"
+			"key": "productName",
+			"value": "Online Portal"
 		},
 		{
-			"key": "description",
-			"value": "Lorem Lorem Lorem blah 1"
+			"key": "name",
+			"value": "James"
+		},
+		{
+			"key": "operatingSystem",
+			"value": "Windows"
+		},
+		{
+			"key": "browserName",
+			"value": "Chrome"
 		}
 	],
 	"subject": "Spring boot test email",
