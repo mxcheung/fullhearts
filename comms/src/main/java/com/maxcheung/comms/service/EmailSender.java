@@ -25,28 +25,28 @@ public class EmailSender {
     private String mailFrom;
 
  
-    public EmailStatus sendPlainText(String to, String subject, String text) {
-        return sendM(to, subject, text, false);
+    public EmailStatus sendPlainText(String recipientEmail, String subject, String text) {
+        return sendM(recipientEmail, subject, text, false);
     }
  
-    public EmailStatus sendHtml(String to, String subject, String htmlBody) {
-        return sendM(to, subject, htmlBody, true);
+    public EmailStatus sendHtml(String recipientEmail, String subject, String htmlBody) {
+        return sendM(recipientEmail, subject, htmlBody, true);
     }
  
-    private EmailStatus sendM(String to, String subject, String text, Boolean isHtml) {
+    private EmailStatus sendM(String recipientEmail, String subject, String text, Boolean isHtml) {
         try {
-            MimeMessage mail = javaMailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(mail, true);
+            final MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+            final MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, false);
             helper.setFrom(mailFrom);
-            helper.setTo(to);
+            helper.setTo(recipientEmail);
             helper.setSubject(subject);
             helper.setText(text, isHtml);
-            javaMailSender.send(mail);
-            LOGGER.info("Send email '{}' to: {}", subject, to);
-            return new EmailStatus(to, subject, text).success();
+            javaMailSender.send(mimeMessage);
+            LOGGER.info("Send email '{}' to: {}", subject, recipientEmail);
+            return new EmailStatus(recipientEmail, subject, text).success();
         } catch (Exception e) {
-            LOGGER.error(String.format("Problem with sending email to: {}, error message: {}", to, e.getMessage()));
-            return new EmailStatus(to, subject, text).error(e.getMessage());
+            LOGGER.error(String.format("Problem with sending email to: {}, error message: {}", recipientEmail, e.getMessage()));
+            return new EmailStatus(recipientEmail, subject, text).error(e.getMessage());
         }
     }
 }

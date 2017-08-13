@@ -33,7 +33,7 @@ public class ApplicationTests {
 		Context context = new Context();
 		context.setVariable("title", "Lorem Ipsum");
 		context.setVariable("description", "Lorem Lorem Lorem");
-		EmailStatus emailStatus = emailHtmlSender.send(mailTo, "Spring boot app", "email/template-1", context);
+		EmailStatus emailStatus = emailHtmlSender.send(mailTo, "Spring boot app", "email/reset-password", context);
 		emailSender.sendPlainText(mailTo, "Spring boot app", "this is not samp");
 	}
 
