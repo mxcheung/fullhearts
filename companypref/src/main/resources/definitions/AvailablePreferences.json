@@ -1,0 +1,163 @@
+{
+   "ALL":{
+      "Company":{
+         "preferences":[
+            {
+               "ruleIdentifier":"Company",
+               "code":"ViewAnalystRequired",
+               "label":"View Analyst Required",
+               "desc":"View Analyst Required Section",
+               "preferenceIdentifier":"Company.ViewAnalystRequired"
+            },
+            {
+               "ruleIdentifier":"Company",
+               "code":"ViewCompanyNotes",
+               "label":"View Company (Notes)",
+               "desc":"View Company Notes Section",
+               "preferenceIdentifier":"Company.ViewCompanyNotes"
+            }
+         ]
+      },
+      "General":{
+         "preferences":[
+            {
+               "ruleIdentifier":"General",
+               "code":"LucasEnabled",
+               "label":"Lucas Enabled",
+               "desc":"Lucas Enabled",
+               "preferenceIdentifier":"General.LucasEnabled"
+            },
+            {
+               "ruleIdentifier":"General",
+               "code":"SaleforceEnabled",
+               "label":"Salesforce Enabled",
+               "desc":"Salesforce Enabled",
+               "preferenceIdentifier":"General.SaleforceEnabled"
+            }
+         ]
+      },
+      "Product":{
+         "preferences":[
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductDataCollectionType",
+               "label":"View Product (Data Collection Type)",
+               "desc":"View Product Data Collection Type Section",
+               "preferenceIdentifier":"Product.ViewProductDataCollectionType"
+            },
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductAssetClassifiers",
+               "label":"View Product (Asset Classifiers)",
+               "desc":"View Product Asset Classifiers Section",
+               "preferenceIdentifier":"Product.ViewProductAssetClassifiers"
+            },
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductAssetNotes",
+               "label":"View Product (Notes)",
+               "desc":"View Product Notes Section",
+               "preferenceIdentifier":"Product.ViewProductAssetNotes"
+            }
+         ]
+      }
+   },
+   "LR":{
+      "Company":{
+         "preferences":[
+            {
+               "ruleIdentifier":"Company",
+               "code":"ViewCompanyNotes",
+               "label":"View Company (Notes)",
+               "desc":"View Company Notes Section",
+               "preferenceIdentifier":"Company.ViewCompanyNotes"
+            }
+         ]
+      },
+      "General":{
+         "preferences":[
+            {
+               "ruleIdentifier":"General",
+               "code":"LucasEnabled",
+               "label":"Lucas Enabled",
+               "desc":"Lucas Enabled",
+               "preferenceIdentifier":"General.LucasEnabled"
+            },
+            {
+               "ruleIdentifier":"General",
+               "code":"SaleforceEnabled",
+               "label":"Salesforce Enabled",
+               "desc":"Salesforce Enabled",
+               "preferenceIdentifier":"General.SaleforceEnabled"
+            }
+         ]
+      },
+      "Product":{
+         "preferences":[
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductDataCollectionType",
+               "label":"View Product (Data Collection Type)",
+               "desc":"View Product Data Collection Type Section",
+               "preferenceIdentifier":"Product.ViewProductDataCollectionType"
+            },
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductAssetClassifiers",
+               "label":"View Product (Asset Classifiers)",
+               "desc":"View Product Asset Classifiers Section",
+               "preferenceIdentifier":"Product.ViewProductAssetClassifiers"
+            },
+            {
+               "ruleIdentifier":"Product",
+               "code":"ViewProductAssetNotes",
+               "label":"View Product (Notes)",
+               "desc":"View Product Notes Section",
+               "preferenceIdentifier":"Product.ViewProductAssetNotes"
+            }
+         ]
+      }
+   },
+   "SR":{
+      "Company":{
+         "preferences":[
+            {
+               "ruleIdentifier":"Company",
+               "code":"ViewAnalystRequired",
+               "label":"View Analyst Required",
+               "desc":"View Analyst Required Section",
+               "preferenceIdentifier":"Company.ViewAnalystRequired"
+            },
+            {
+               "ruleIdentifier":"Company",
+               "code":"ViewCompanyNotes",
+               "label":"View Company (Notes)",
+               "desc":"View Company Notes Section",
+               "preferenceIdentifier":"Company.ViewCompanyNotes"
+            }
+         ]
+      },
+      "General":{
+         "preferences":[
+            {
+               "ruleIdentifier":"General",
+               "code":"LucasEnabled",
+               "label":"Lucas Enabled",
+               "desc":"Lucas Enabled",
+               "preferenceIdentifier":"General.LucasEnabled"
+            },
+            {
+               "ruleIdentifier":"General",
+               "code":"SaleforceEnabled",
+               "label":"Salesforce Enabled",
+               "desc":"Salesforce Enabled",
+               "preferenceIdentifier":"General.SaleforceEnabled"
+            }
+         ]
+      },
+      "Product":{
+         "preferences":[
+         ]
+      }
+   }
+}
